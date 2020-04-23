@@ -1,8 +1,8 @@
 {
-  "images" : [
+  "symbols" : [
     {
       "idiom" : "universal",
-      "filename" : "second.pdf"
+      "filename" : "wrench.fill.svg"
     }
   ],
   "info" : {

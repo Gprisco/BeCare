@@ -1,4 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="true" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19D76" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+    <entity name="Reminder" representedClassName=".Reminder" syncable="YES">
+        <attribute name="category" optional="YES" attributeType="String"/>
+        <attribute name="deadline_date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="deadline_km" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="expense" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="vehicle" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Vehicle" inverseName="reminder" inverseEntity="Vehicle"/>
+    </entity>
+    <entity name="Trip" representedClassName=".Trip" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="km" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="vehicle" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Vehicle" inverseName="trip" inverseEntity="Vehicle"/>
+    </entity>
+    <entity name="Vehicle" representedClassName=".Vehicle" syncable="YES">
+        <attribute name="km" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+        <attribute name="year" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="reminder" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Reminder" inverseName="vehicle" inverseEntity="Reminder"/>
+        <relationship name="trip" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Trip" inverseName="vehicle" inverseEntity="Trip"/>
+    </entity>
+    <elements>
+        <element name="Vehicle" positionX="-36" positionY="9" width="128" height="133"/>
+        <element name="Trip" positionX="0" positionY="45" width="128" height="88"/>
+        <element name="Reminder" positionX="27" positionY="72" width="128" height="133"/>
+    </elements>
 </model>
