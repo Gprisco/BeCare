@@ -14,9 +14,9 @@
 		01D6677D2450BD820024634C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01D6677C2450BD820024634C /* Assets.xcassets */; };
 		01D667802450BD820024634C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01D6677F2450BD820024634C /* Preview Assets.xcassets */; };
 		01D667832450BD820024634C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01D667812450BD820024634C /* LaunchScreen.storyboard */; };
-		01D6678E2450BE050024634C /* ReminderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D6678B2450BE050024634C /* ReminderModel.swift */; };
-		01D6678F2450BE050024634C /* TripModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D6678C2450BE050024634C /* TripModel.swift */; };
-		01D667902450BE050024634C /* VehicleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D6678D2450BE050024634C /* VehicleModel.swift */; };
+		01D6678E2450BE050024634C /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D6678B2450BE050024634C /* Reminder.swift */; };
+		01D6678F2450BE050024634C /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D6678C2450BE050024634C /* Trip.swift */; };
+		01D667902450BE050024634C /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D6678D2450BE050024634C /* Vehicle.swift */; };
 		01D667922450BE0A0024634C /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D667912450BE0A0024634C /* Helpers.swift */; };
 		01D667982450BE110024634C /* PageDotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D667942450BE110024634C /* PageDotView.swift */; };
 		01D667992450BE110024634C /* OnBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D667952450BE110024634C /* OnBoarding.swift */; };
@@ -25,6 +25,8 @@
 		01D6679D2450BEBF0024634C /* ReminderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D6679C2450BEBF0024634C /* ReminderView.swift */; };
 		01D6679F2450BF710024634C /* ReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D6679E2450BF710024634C /* ReportView.swift */; };
 		01D667A22450C43C0024634C /* AddReminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D667A12450C43C0024634C /* AddReminder.swift */; };
+		01D667A6246017140024634C /* ReminderRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D667A5246017140024634C /* ReminderRow.swift */; };
+		01D667A8246018630024634C /* CategoryHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D667A7246018630024634C /* CategoryHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,9 +39,9 @@
 		01D6677F2450BD820024634C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		01D667822450BD820024634C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01D667842450BD820024634C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		01D6678B2450BE050024634C /* ReminderModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReminderModel.swift; sourceTree = "<group>"; };
-		01D6678C2450BE050024634C /* TripModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripModel.swift; sourceTree = "<group>"; };
-		01D6678D2450BE050024634C /* VehicleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehicleModel.swift; sourceTree = "<group>"; };
+		01D6678B2450BE050024634C /* Reminder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
+		01D6678C2450BE050024634C /* Trip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		01D6678D2450BE050024634C /* Vehicle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
 		01D667912450BE0A0024634C /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		01D667942450BE110024634C /* PageDotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageDotView.swift; sourceTree = "<group>"; };
 		01D667952450BE110024634C /* OnBoarding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoarding.swift; sourceTree = "<group>"; };
@@ -48,6 +50,8 @@
 		01D6679C2450BEBF0024634C /* ReminderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderView.swift; sourceTree = "<group>"; };
 		01D6679E2450BF710024634C /* ReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportView.swift; sourceTree = "<group>"; };
 		01D667A12450C43C0024634C /* AddReminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReminder.swift; sourceTree = "<group>"; };
+		01D667A5246017140024634C /* ReminderRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderRow.swift; sourceTree = "<group>"; };
+		01D667A7246018630024634C /* CategoryHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,9 +112,9 @@
 		01D6678A2450BE050024634C /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				01D6678B2450BE050024634C /* ReminderModel.swift */,
-				01D6678C2450BE050024634C /* TripModel.swift */,
-				01D6678D2450BE050024634C /* VehicleModel.swift */,
+				01D6678B2450BE050024634C /* Reminder.swift */,
+				01D6678C2450BE050024634C /* Trip.swift */,
+				01D6678D2450BE050024634C /* Vehicle.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -131,6 +135,8 @@
 			children = (
 				01D6679C2450BEBF0024634C /* ReminderView.swift */,
 				01D667A12450C43C0024634C /* AddReminder.swift */,
+				01D667A5246017140024634C /* ReminderRow.swift */,
+				01D667A7246018630024634C /* CategoryHeader.swift */,
 			);
 			path = Reminder;
 			sourceTree = "<group>";
@@ -206,7 +212,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01D667902450BE050024634C /* VehicleModel.swift in Sources */,
+				01D667902450BE050024634C /* Vehicle.swift in Sources */,
+				01D667A8246018630024634C /* CategoryHeader.swift in Sources */,
 				01D667792450BD7F0024634C /* BeCare.xcdatamodeld in Sources */,
 				01D6679A2450BE110024634C /* PageViewController.swift in Sources */,
 				01D667742450BD7F0024634C /* AppDelegate.swift in Sources */,
@@ -215,8 +222,9 @@
 				01D667992450BE110024634C /* OnBoarding.swift in Sources */,
 				01D6679D2450BEBF0024634C /* ReminderView.swift in Sources */,
 				01D667982450BE110024634C /* PageDotView.swift in Sources */,
-				01D6678F2450BE050024634C /* TripModel.swift in Sources */,
-				01D6678E2450BE050024634C /* ReminderModel.swift in Sources */,
+				01D6678F2450BE050024634C /* Trip.swift in Sources */,
+				01D6678E2450BE050024634C /* Reminder.swift in Sources */,
+				01D667A6246017140024634C /* ReminderRow.swift in Sources */,
 				01D6679B2450BE110024634C /* Subview.swift in Sources */,
 				01D6677B2450BD7F0024634C /* ContentView.swift in Sources */,
 				01D667762450BD7F0024634C /* SceneDelegate.swift in Sources */,

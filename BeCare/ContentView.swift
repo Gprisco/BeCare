@@ -19,7 +19,7 @@ struct ContentView: View {
     @Environment(\.managedObjectContext) var managedObjectContext
     @FetchRequest(fetchRequest: Reminder.loadRemindersFromFetchRequest()) var reminderData: FetchedResults<Reminder>
     @FetchRequest(fetchRequest: Trip.loadTripsFromFetchRequest()) var tripData: FetchedResults<Trip>
-
+    
     var body: some View {
         ZStack(alignment: .leading) {
             if !self.isAuth {
@@ -52,10 +52,10 @@ struct ContentView: View {
         .onAppear(perform: {
             let context = LAContext()
             var error: NSError?
-
+            
             if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
                 let reason = "Identify yourself!"
-
+                
                 context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { success, authenticationError in
                     DispatchQueue.main.async {
                         if success {
